@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapt Images</title>
+    <style>
+
+         /* Base styles for the image */
+         .responsive-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .responsive-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Medium devices (tablets, 600px to 768px) */
+        @media only screen and (min-width: 601px) and (max-width: 768px) {
+            .responsive-image {
+                width: 80%;
+                height: auto;
+            }
+        }
+
+        /* Large devices (desktops, 768px and up) */
+        @media only screen and (min-width: 769px) {
+            .responsive-image {
+                width: 60%;
+                height: auto;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Adapt The image for different devices</h1>
+    <img src="images/F.jpg" alt="tia pakhi" class="responsive-image">
+</body>
+</html>
